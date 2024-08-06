@@ -25,7 +25,6 @@
 # Icon must end with two \r
 Icon
 
-
 # Thumbnails
 ._*
 
@@ -60,6 +59,34 @@ Temporary Items
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+/Depth/**/[Ll]ibrary/
+/Depth/**/[Tt]emp/
+/Depth/**/[Oo]bj/
+/Depth/**/[Bb]uild/
+/Depth/**/[Bb]uilds/
+/Depth/**/[Ll]ogs/
+/Depth/**/[Uu]ser[Ss]ettings/
+/Eccentricity/**/[Ll]ibrary/
+/Eccentricity/**/[Tt]emp/
+/Eccentricity/**/[Oo]bj/
+/Eccentricity/**/[Bb]uild/
+/Eccentricity/**/[Bb]uilds/
+/Eccentricity/**/[Ll]ogs/
+/Eccentricity/**/[Uu]ser[Ss]ettings/
+/Lang/**/[Ll]ibrary/
+/Lang/**/[Tt]emp/
+/Lang/**/[Oo]bj/
+/Lang/**/[Bb]uild/
+/Lang/**/[Bb]uilds/
+/Lang/**/[Ll]ogs/
+/Lang/**/[Uu]ser[Ss]ettings/
+/SimpleRT/**/[Ll]ibrary/
+/SimpleRT/**/[Tt]emp/
+/SimpleRT/**/[Oo]bj/
+/SimpleRT/**/[Bb]uild/
+/SimpleRT/**/[Bb]uilds/
+/SimpleRT/**/[Ll]ogs/
+/SimpleRT/**/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
