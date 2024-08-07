@@ -216,11 +216,6 @@ Eye tracking calibration" + new string('.', calibrationPeriodCycle);
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
             participantID = nameInputField.text;
-            string ovcoString = "covert";
-            if (isOvert)
-            {
-                ovcoString = "overt";
-            }
             string protocolName = string.Empty;
 
             switch (currentProtocol)
@@ -249,7 +244,7 @@ Eye tracking calibration" + new string('.', calibrationPeriodCycle);
             }
 
             // Creates data folder / file
-            logFile = dataPath + participantID + "-" + ovcoString + protocolName + "rtData-" + System.DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".csv";
+            logFile = dataPath + participantID + "-" + protocolName + "rtData-" + System.DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".csv";
             if (!Directory.Exists(dataPath))
             {
                 Directory.CreateDirectory(dataPath);
