@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2159.6614, g: 2262.1545, b: 3280.4692, a: 1}
+  m_IndirectSpecularColor: {r: 2159.6692, g: 2262.131, b: 3280.3677, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -765,31 +765,46 @@ MonoBehaviour:
   isOvert: 1
   doublePos:
   - 0
-  - 10
-  - 20
-  - 30
-  - -10
-  - -20
-  - -30
-  doubleVertPos:
-  - 0
   - 15
   - 30
   - -15
   - -30
+  doubleVertPos:
+  - 0
+  - 10
+  - 20
+  - -10
+  - -20
   stimuli:
   - CanvasE
   - CanvasB
   - CanvasP
   instrTextValues:
-  - "You will be reacting to three different letters in this protocol, and\r\n       
-    pressing the keys v, b, and n for each one. Please try to react to the\r\n       
-    faces and don't try to anticipate them. Press Spacebar when ready."
+  - 'You will be reacting to three different
+
+    letters in this protocol, and
+    pressing
+
+    the keys v, b, and n for each one.
+
+    Please try to react to
+    the letters and
+
+    don''t try to anticipate them.
+
+    
+
+    Press Spacebar
+    when ready.'
   - This is the letter E. Press v to continue.
   - This is the letter B. Press b to continue.
   - This is the letter P. Press n to continue.
-  - "Here are some practice rounds to familiarize you with the protocol.\r\n       
-    Press Spacebar to begin."
+  - 'Here are some practice rounds to
+
+    familiarize you with the protocol.
+
+    Press
+    Spacebar to begin.'
   currentTrial: 1
   trainingTrials: 3
   trials: 5

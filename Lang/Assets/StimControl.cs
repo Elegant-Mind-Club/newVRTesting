@@ -23,11 +23,12 @@ public class StimControl : MonoBehaviour
 
     // Instruction text values
     public string[] instrTextValues = {
-    @"Hello! You are going be presented with
-    fifty sentences. Read each sentence
-    throughoutly and press [spacebar] once
-    finished. Now, if you are ready,
-    press [spacebar] to continue. "
+    @"
+Hello! You are going be presented with
+fifty sentences. Read each sentence
+throughouly and press [spacebar] once
+finished. Now, if you are ready,
+press [spacebar] to continue. "
     };
 
     public string[] stimTextValues = {
@@ -198,7 +199,7 @@ public class StimControl : MonoBehaviour
             participantID = nameInputField.text;
 
             // Creates data folder / file
-            logFile = dataPath + participantID + "-" + "rtData-" + System.DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".csv";
+            logFile = dataPath + participantID + "-" + sentenceHeight + "deg-rtData-" + System.DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".csv";
             if (!Directory.Exists(dataPath))
             {
                 Directory.CreateDirectory(dataPath);
@@ -287,7 +288,8 @@ public class StimControl : MonoBehaviour
     {
         phase *= -1;
         // Shows text for 2 seconds and ends the protocol
-        instrText.GetComponent<TextMeshPro>().text = "Thank you for taking data for us! Please take your demographics survey now";
+        instrText.GetComponent<TextMeshPro>().text = @"Thank you for taking data for us!
+Please take your demographics survey now";
         instrText.transform.position = GameObject.Find("textPos").transform.position;
         yield return new WaitForSecondsRealtime(2f);
         UnityEditor.EditorApplication.isPlaying = false;

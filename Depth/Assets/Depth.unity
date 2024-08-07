@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 3310.0747, g: 3649.0474, b: 5363.9224, a: 1}
+  m_IndirectSpecularColor: {r: 3307.9067, g: 3643.7817, b: 5349.1646, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -825,7 +825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de47587f5c23e449a1813b78c03b5c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentProtocol: 0
+  currentProtocol: 5
   stringPos:
   - 0.5m
   - 1m
@@ -835,18 +835,34 @@ MonoBehaviour:
   scales: 0100000002000000040000000800000010000000
   stimuli: []
   instrTextValues:
-  - "\r\n        You will be reacting to three different\r\n        stimuli in this
-    protocol, and pressing\r\n        the keys v, b, and n for each one.\r\n       
-    Please try to react to the stimuli and\r\n        don't try to anticipate them.\r\n\r\n       
-    Press Spacebar when ready."
+  - '
+
+    You will be reacting to three different
+
+    stimuli in this protocol,
+    and pressing
+
+    the keys v, b, and n for each one.
+
+    Please try to react
+    to the stimuli and
+
+    don''t try to anticipate them.
+
+    
+
+    Press Spacebar
+    when ready.'
   - This is stimulus 1. Press v to continue.
   - This is the stimulus 2. Press b to continue.
   - This is the stimulus 3. Press n to continue.
-  - "Here are some practice rounds to familiarize you with the protocol.\r\n       
-    Press Spacebar to begin."
+  - 'Here are some practice rounds to familiarize you with the protocol.
+
+    Press
+    Spacebar to begin.'
   currentTrial: 1
   trainingTrials: 3
-  trials: 5
+  trials: 25
   phase: 1
   logFile: 
   participantID: 
@@ -2429,7 +2445,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1206417406}
   - component: {fileID: 1206417405}
-  - component: {fileID: 1206417407}
   m_Layer: 0
   m_Name: eyeTracking
   m_TagString: Untagged
@@ -2475,18 +2490,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1206417407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206417404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94a84025532663b49a8d4cf65e835f3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1242081253
 GameObject:
   m_ObjectHideFlags: 0
@@ -2900,8 +2903,8 @@ RectTransform:
   m_GameObject: {fileID: 1431095044}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 15}
-  m_LocalScale: {x: 1, y: 0.14, z: 0.14}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1079639957}
   m_Father: {fileID: 1242081254}

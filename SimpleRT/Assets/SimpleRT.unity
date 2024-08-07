@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2161.9475, g: 2265.8655, b: 3288.6177, a: 1}
+  m_IndirectSpecularColor: {r: 2160.5852, g: 2265.307, b: 3289.2075, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -762,29 +762,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de47587f5c23e449a1813b78c03b5c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numStimuli: 3
-  currStimType: 3
+  numStimuli: 1
+  currStimType: 0
   cueOn: 1
   skipEyeTrackingCalibration: 1
   doublePos:
   - 0
   instructions:
-  - "\r\n        You will be reacting to three different\r\n        stimuli in this
-    protocol, and pressing\r\n        the keys v, b, and n for each one.\r\n       
-    Please try to react to the stimuli and\r\n        don't try to anticipate them.\r\n\r\n       
-    Press Spacebar when ready."
+  - '
+
+    You will be reacting to three different
+
+    stimuli in this protocol,
+    and pressing
+
+    the keys v, b, and n for each one.
+
+    Please try to react
+    to the stimuli and
+
+    don''t try to anticipate them.
+
+    
+
+    Press Spacebar
+    when ready.'
   - This is stimuli 1. Press v to continue.
   - This is stimuli 2. Press b to continue.
   - This is stimuli 3. Press n to continue.
-  - "Here are some practice rounds to familiarize you with the protocol.\r\n       
-    Press Spacebar to begin."
+  - 'Here are some practice rounds to familiarize you with the protocol.
+
+    Press
+    Spacebar to begin.'
   currentTrial: 1
   trainingTrials: 3
   trials: 5
   phase: 1
   logFile: 
-  instrText: {fileID: 0}
-  nameInputField: {fileID: 0}
   participantID: 
   eventSystem: {fileID: 0}
 --- !u!1 &236099192

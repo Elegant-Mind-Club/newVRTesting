@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2161.9475, g: 2265.8655, b: 3288.6177, a: 1}
+  m_IndirectSpecularColor: {r: 2159.6458, g: 2262.139, b: 3280.3716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -556,11 +556,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de47587f5c23e449a1813b78c03b5c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentenceHeight: 1
+  sentenceHeight: 6
   instrTextValues:
-  - "Hello! You are going be presented with\r\n    fifty sentences. Read each sentence\r\n   
-    throughoutly and press [spacebar] once\r\n    finished. Now, if you are ready,\r\n   
-    press [spacebar] to continue. "
+  - '
+
+    Hello! You are going be presented with
+
+    fifty sentences. Read each
+    sentence
+
+    throughoutly and press [spacebar] once
+
+    finished. Now, if you
+    are ready,
+
+    press [spacebar] to continue. '
   stimTextValues:
   - I bought a new blue shirt.
   - It fits really well on me.
@@ -976,7 +986,7 @@ RectTransform:
   m_GameObject: {fileID: 809431882}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 139154787}
@@ -1871,7 +1881,7 @@ Transform:
   m_GameObject: {fileID: 1493192369}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 0.03492077, y: 0.03492077, z: 0.03492077}
   m_ConstrainProportionsScale: 1
   m_Children: []

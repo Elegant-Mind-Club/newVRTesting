@@ -21,21 +21,20 @@ public class StimControl : MonoBehaviour
     private bool cueOn = true;
     public bool isOvert = true;
     public double[] doublePos = {0.0, 15.0, 30.0, -15.0, -30.0}; // Different random horizontal positions
-    public double[] doubleVertPos = {0.0, 15.0, 30.0, -15.0, -30.0}; // Different random vertical positions
+    public double[] doubleVertPos = {0.0, 10.0, 20.0, -10.0, -20.0}; // Different random vertical positions
     // Names of different stimuli (Unity object names)
     public string[] stimuli = { "CanvasE", "CanvasB", "CanvasP" };
 
     // Instruction text values
     public string[] instrTextValues = {
         // Instruction 1
-        @"
-        You will be reacting to three different
-        letters in this protocol, and pressing
-        the keys v, b, and n for each one.
-        Please try to react to the letters and
-        don't try to anticipate them.
+        @"You will be reacting to three different
+letters in this protocol, and pressing
+the keys v, b, and n for each one.
+Please try to react to the letters and
+don't try to anticipate them.
 
-        Press Spacebar when ready.",
+Press Spacebar when ready.",
         // Instruction 2
         @"This is the letter E. Press v to continue.",
         // Instruction 3
@@ -43,8 +42,9 @@ public class StimControl : MonoBehaviour
         // Instruction 4
         @"This is the letter P. Press n to continue.",
         // Instruction 5
-        @"Here are some practice rounds to familiarize you with the protocol.
-        Press Spacebar to begin.",
+        @"Here are some practice rounds to
+familiarize you with the protocol.
+Press Spacebar to begin.",
     };
 
     // Counter for finishing the program
@@ -345,7 +345,8 @@ public class StimControl : MonoBehaviour
     {
         phase *= -1;
         // Shows and updates text for the break
-        instrText.GetComponent<TextMeshPro>().text = $"Training has finished. The experiment will begin in {countdownTime} seconds";
+        instrText.GetComponent<TextMeshPro>().text = $@"Training has finished.
+The experiment will begin in {countdownTime} seconds";
         instrText.transform.position = GameObject.Find("textPos").transform.position;
         yield return new WaitForSecondsRealtime(1f);
         countdownTime -= 1;
@@ -422,7 +423,8 @@ public class StimControl : MonoBehaviour
     {
         phase *= -1;
         // Shows text for 2 seconds and ends the protocol
-        instrText.GetComponent<TextMeshPro>().text = "Thank you for taking data for us! Please take your demographics survey now";
+        instrText.GetComponent<TextMeshPro>().text = @"Thank you for taking data for us!
+Please take your demographics survey now";
         instrText.transform.position = GameObject.Find("textPos").transform.position;
         yield return new WaitForSecondsRealtime(2f);
         UnityEditor.EditorApplication.isPlaying = false;

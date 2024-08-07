@@ -42,13 +42,13 @@ public class StimControl : MonoBehaviour
     public string[] instructions = {
         // Instruction 1
         @"
-        You will be reacting to three different
-        stimuli in this protocol, and pressing
-        the keys v, b, and n for each one.
-        Please try to react to the stimuli and
-        don't try to anticipate them.
+You will be reacting to three different
+stimuli in this protocol, and pressing
+the keys v, b, and n for each one.
+Please try to react to the stimuli and
+don't try to anticipate them.
 
-        Press Spacebar when ready.",
+Press Spacebar when ready.",
         // Instruction 2
         @"This is stimuli 1. Press v to continue.",
         // Instruction 3
@@ -57,7 +57,7 @@ public class StimControl : MonoBehaviour
         @"This is stimuli 3. Press n to continue.",
         // Instruction 5
         @"Here are some practice rounds to familiarize you with the protocol.
-        Press Spacebar to begin.",
+Press Spacebar to begin.",
     };
     private string[] instrTextValues;
 
@@ -167,7 +167,7 @@ public class StimControl : MonoBehaviour
         // Update the text with the current number of periods
         instrText.GetComponent<TextMeshPro>().text = 
         @"(Press Backslash to restart calibration)
-        Eye tracking calibration" + new string('.', calibrationPeriodCycle);
+Eye tracking calibration" + new string('.', calibrationPeriodCycle);
         // Increment the period count, reset if it reaches 4
         calibrationPeriodCycle = (calibrationPeriodCycle + 1) % 4;
 
@@ -208,8 +208,28 @@ public class StimControl : MonoBehaviour
                 ovcoString = "overt";
             }
 
+            string currStimString;
+
+            switch (currStimType)
+            {
+                case stimType.face:
+                    currStimString = "Face";
+                    break;
+                case stimType.letter:
+                    currStimString = "Letter";
+                    break;
+                case stimType.color:
+                    currStimString = "Color";
+                    break;
+                case stimType.gabor:
+                    currStimString = "Gabor";
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+
             // Creates data folder / file
-            logFile = dataPath + participantID + "-" + ovcoString + "rtData-" + System.DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".csv";
+            logFile = dataPath + participantID + "-" + ovcoString + currStimString + "rtData-" + System.DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".csv";
             if (!Directory.Exists(dataPath))
             {
                 Directory.CreateDirectory(dataPath);
@@ -358,7 +378,8 @@ public class StimControl : MonoBehaviour
     {
         phase *= -1;
         // Shows and updates text for the break
-        instrText.GetComponent<TextMeshPro>().text = $"Training has finished. The experiment will begin in {countdownTime} seconds";
+        instrText.GetComponent<TextMeshPro>().text = $@"Training has finished.
+The experiment will begin in {countdownTime} seconds";
         instrText.transform.position = GameObject.Find("textPos").transform.position;
         yield return new WaitForSecondsRealtime(1f);
         countdownTime -= 1;
@@ -434,7 +455,8 @@ public class StimControl : MonoBehaviour
     {
         phase *= -1;
         // Shows text for 2 seconds and ends the protocol
-        instrText.GetComponent<TextMeshPro>().text = "Thank you for taking data for us! Please take your demographics survey now";
+        instrText.GetComponent<TextMeshPro>().text = @"Thank you for taking data for us!
+Please take your demographics survey now";
         instrText.transform.position = GameObject.Find("textPos").transform.position;
         yield return new WaitForSecondsRealtime(2f);
         UnityEditor.EditorApplication.isPlaying = false;
