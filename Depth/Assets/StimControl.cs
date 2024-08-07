@@ -490,6 +490,7 @@ Please take your demographics survey now";
         switch (currentProtocol)
         {
             case protocolType.faceScaling:
+            case protocolType.wordScaling:
                 stringPos = new string[] {"1m"}; // Different random positions available (Unity object names)
                 break;
             default:
