@@ -164,10 +164,22 @@ crashlytics-build.properties
 
 # Packed Addressables
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+/Depth/**/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+/Eccentricity/**/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+/Lang/**/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+/SimpleRT/**/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
+/Depth/**/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/Eccentricity/**/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/Lang/**/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/SimpleRT/**/[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+/Depth/**/[Aa]ssets/[Ss]treamingAssets/aa/*
+/Eccentricity/**/[Aa]ssets/[Ss]treamingAssets/aa/*
+/Lang/**/[Aa]ssets/[Ss]treamingAssets/aa/*
+/SimpleRT/**/[Aa]ssets/[Ss]treamingAssets/aa/*
 
 ### Windows ###
 # Windows thumbnail cache files
