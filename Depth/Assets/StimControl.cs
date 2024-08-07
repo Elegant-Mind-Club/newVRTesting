@@ -492,9 +492,6 @@ Please take your demographics survey now";
             case protocolType.faceScaling:
                 stringPos = new string[] {"1m"}; // Different random positions available (Unity object names)
                 break;
-            case protocolType.wordScaling:
-                stringPos = new string[] {"1m"}; // Different random positions available (Unity object names)
-                break;
             default:
                 break;
         }
