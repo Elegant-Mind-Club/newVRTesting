@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2159.6692, g: 2262.131, b: 3280.3677, a: 1}
+  m_IndirectSpecularColor: {r: 2159.6692, g: 2262.2366, b: 3280.3677, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -808,7 +808,7 @@ MonoBehaviour:
   currentTrial: 1
   trainingTrials: 3
   trials: 5
-  phase: 2
+  phase: 1
   logFile: 
   participantID: 
   eventSystem: {fileID: 0}
